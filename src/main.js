@@ -56,14 +56,14 @@
 //       }
 //     }
 //   }
-// } 
+// }
 // btnGame.onclick = checkBase
 
 document.addEventListener("DOMContentLoaded", function () {
   const inputs = document.querySelectorAll("input");
   const btnGame = document.getElementById("gameCheck");
   const form = document.getElementById("form");
-  const resetButton = document.querySelector('.reset')
+  const resetButton = document.querySelector(".reset");
 
   const sequencias = {
     sequencia1: [7, 14, 21, 32, 45, 59],
@@ -133,18 +133,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function displayResultado(mensagem) {
     // Criar elemento de parágrafo para exibir a mensagem
-    const containerResult = document.querySelector('.result')
-    containerResult.classList.add('show')
+    const containerResult = document.querySelector(".result-container");
+    containerResult.classList.add("show");
+
     const resultadoParagrafo = document.querySelector(".result-show");
     resultadoParagrafo.textContent = mensagem;
 
-    const closeBtn = document.querySelector('.close')
-    closeBtn.addEventListener('click', ()=>{
-      if(containerResult.classList.contains('show')){
-        containerResult.classList.remove('show')
-      }
-    })
-    
+    const closeBtn = document.querySelector(".close");
+    closeBtn.addEventListener("click", () => {
+      containerResult.classList.remove("show");
+    });
   }
 
   // Adicionando evento de clique para o botão
