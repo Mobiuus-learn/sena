@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h2>Checador de Jogos Mega Sena</h2>
+    </header>
+    <form action="#" id="form">
+      <div class="inputs">
+
+        <input type="number" name="num1" id="num1" min="1" max="60" required />
+
+        <!-- <label for="num2">Número 2:</label> -->
+        <input type="number" name="num2" id="num2" min="1" max="60" required />
+
+        <!-- <label for="num3">Número 3:</label> -->
+        <input type="number" name="num3" id="num3" min="1" max="60" required />
+
+        <!-- <label for="num4">Número 4:</label> -->
+        <input type="number" name="num4" id="num4" min="1" max="60" required />
+
+        <!-- <label for="num5">Número 5:</label> -->
+        <input type="number" name="num5" id="num5" min="1" max="60" required />
+
+        <!-- <label for="num6">Número 6:</label> -->
+        <input type="number" name="num6" id="num6" min="1" max="60" required />
+      </div>
+
+      <button id="gameCheck">Checar Jogo</button>
+      <button class="reset" type ="reset">Limpar</button>
+    </form>
+    
+    <div class="result">
+      <h1> Jogo Vencedor </h1>
+      <p class="result-show"> 1, 2, 3, 4, 5, 6</p>
+      <button class="reset close"> fechar </button>
+    </div>
+    <script src="src/main.js"></script>
+  </body>
+</html>
